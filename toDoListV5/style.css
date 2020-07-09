@@ -35,7 +35,8 @@ input:autofill {
     margin: 0.5em;
   }
   input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px gray inset !important;
+    box-shadow: none;
+    -webkit-box-shadow: 0 0 0 1000px grey inset !important;
   }
 
   .flex-container {
