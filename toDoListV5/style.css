@@ -10,16 +10,9 @@ body {
 
 a {
   text-decoration: none;
-  color: blue;
+  color: green;
 }
 
-input {
-  width: 10em;
-  height: 2em;
-  background-color: gray;
-  border-radius: 8%;
-  border-style: none;
-}
 input:focus {
   outline-color: blue;
   outline-style: solid;
@@ -27,11 +20,24 @@ input:focus {
 input:active {
   background-color: gray;
 }
+input:autofill {
+  max-width: 100vw;
+  background-color: gray;
+}
 
 @media only screen and (max-width: 600px) {
   input {
+    width: 10em;
+    height: 2em;
+    background-color: gray;
+    border-radius: 8%;
+    border-style: none;
     margin: 0.5em;
   }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px gray inset !important;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: column;
@@ -42,9 +48,33 @@ input:active {
   .max {
     max-width: 20em;
   }
+  .deleteBtn {
+    width: 2em;
+    height: 2em;
+    background-color: red;
+  }
 }
 
 @media only screen and (min-width: 600px) {
+  input {
+    width: 15em;
+    height: 2em;
+    background-color: gray;
+    border-radius: 8%;
+    border-style: none;
+    margin: 0.5em;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .max {
+    max-width: 40em;
+  }
 }
 
 .bg1 {

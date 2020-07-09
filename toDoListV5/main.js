@@ -12,4 +12,5 @@ let userSubmitButton = document.getElementById("userAddButton");
 userSubmitButton.addEventListener("click", function () {
   createListItem(userTextInput.value);
   sendToLocalStorage(userTextInput.value);
+  userTextInput.value = "";
 });
