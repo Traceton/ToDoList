@@ -11,6 +11,13 @@ export let createListItem = (userInputValue) => {
   listDiv.append(h3);
 
   let remove = () => {
+    for (let i = 0; i < localStorage.length; i++) {
+      let storageItems = localStorage.getItem(localStorage.key(i));
+      console.log(storageItems);
+      if ((storageItems = h3.innerText)) {
+        localStorage.removeItem(storageItems);
+      }
+    }
     h3.remove();
   };
   deleteBtn.addEventListener("click", remove);

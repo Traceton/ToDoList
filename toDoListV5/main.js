@@ -10,8 +10,6 @@ import {
 export let listDiv = document.getElementById("list");
 let userTextInput = document.getElementById("userListEntry");
 let userSubmitButton = document.getElementById("userAddButton");
-let clearLocal = document.getElementById("clearLocal");
-let showLocal = document.getElementById("showLocal");
 // end of elements above
 
 // start of event listeners
@@ -21,6 +19,4 @@ userSubmitButton.addEventListener("click", function () {
   userTextInput.value = "";
 });
 
-clearLocal.addEventListener("click", clearLocalStorage);
-showLocal.addEventListener("click", showLocalStorage);
 window.onload = loadLocalStorageItems();
