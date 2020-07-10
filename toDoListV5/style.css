@@ -65,6 +65,10 @@ input:autofill {
     border-style: none;
     margin: 0.5em;
   }
+  input:-webkit-autofill {
+    box-shadow: none;
+    -webkit-box-shadow: 0 0 0 1000px grey inset !important;
+  }
 
   .flex-container {
     display: flex;
@@ -75,6 +79,11 @@ input:autofill {
   }
   .max {
     max-width: 40em;
+  }
+  .deleteBtn {
+    width: 2em;
+    height: 2em;
+    background-color: red;
   }
 }
 
