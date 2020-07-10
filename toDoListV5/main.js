@@ -3,6 +3,7 @@ import {
   sendToLocalStorage,
   clearLocalStorage,
   showLocalStorage,
+  loadLocalStorageItems,
 } from "./localStorage.js";
 
 // start of elements below
@@ -22,3 +23,4 @@ userSubmitButton.addEventListener("click", function () {
 
 clearLocal.addEventListener("click", clearLocalStorage);
 showLocal.addEventListener("click", showLocalStorage);
+window.onload = loadLocalStorageItems();
