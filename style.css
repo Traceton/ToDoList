@@ -13,6 +13,11 @@ a {
   text-decoration: none;
   color: green;
 }
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
 input:focus {
   outline-color: blue;
