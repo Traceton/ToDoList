@@ -33,6 +33,9 @@ input:autofill {
 
 @media only screen and (max-width: 600px) {
   input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 10em;
     height: 2em;
     background-color: gray;
