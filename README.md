@@ -1,4 +1,4 @@
-# 🚀 Todo List
+# 📝 Todo List
 Create a Todo list to keep track of your tasks.
 
 ### :star: Features
