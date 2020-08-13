@@ -1,5 +1,5 @@
 export const createListItem = (userInputValue) => {
-  // Dom Objects
+  // Dom Objects.
   let item = document.createElement("h3");
   let delBtn = document.createElement("input");
   let list = document.getElementById("list");
@@ -8,13 +8,15 @@ export const createListItem = (userInputValue) => {
   delBtn.classList = "deleteBtn";
   delBtn.value = "X";
 
+  // Create list item.
   item.append(userInputValue);
   item.append(delBtn);
   list.append(item);
 
   item.classList = "todo-item";
-
-  let remove = () => {
+  
+  // Remove list item.
+  const remove = () => {
     for (let i = 0; i < localStorage.length; i++) {
       let storageItems = localStorage.getItem(localStorage.key(i));
       console.log(storageItems);
