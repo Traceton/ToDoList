@@ -5,7 +5,7 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>List V5</title>
@@ -19,8 +19,13 @@
       </div>
       <div class="max">
         <h1>To Do List</h1>
-        <form onsubmit="return false" autocomplete="off">
-          <input id="userListEntry" type="text" name="listEntry" />
+        <form onsubmit=" return false" autocomplete="off">
+          <input
+            id="userListEntry"
+            type="text"
+            name="listEntry"
+            placeholder="Enter a task to do..."
+          />
           <input id="userAddButton" type="submit" value="Add To List" />
         </form>
       </div>
@@ -29,5 +34,5 @@
       </div>
     </div>
   </body>
-  <script type="module" src="./main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </html>
